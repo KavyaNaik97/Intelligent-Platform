@@ -120,7 +120,7 @@ $font-color:#134e6f;
             }
             p{
                 color: $font-color;
-                font-size: 20px
+                font-size: 18px;
             }
             .button-group{
                 &-rm-btn{
@@ -179,15 +179,18 @@ $font-color:#134e6f;
     .about-section{
         // background-color: #f9f9f9;
         padding-bottom: 80px;
-       
+        padding-top: 30px;
         &-col{
+            img{
+                margin-top: 60px;
+            }
             &-cont{
                 color: #134e6f;
                 font-family: 'Roboto', sans-serif;
                 line-height: 1.9em;
                 padding-left: 20px;
-                 padding-right: 20px;
-                 font-size: 19px;
+                letter-spacing: 0.5px;
+                padding-right: 20px;
             }
             &-head{
                 color: #134e6f;
@@ -232,18 +235,58 @@ $font-color:#134e6f;
             .card-body{
                 p:first-child{
                     height: 143px;
-                    color: #000000;
+                    
                 }
             }
             
         }
         
     }
+    .service-section{
+        // background-color: #f9f9f9;
+        padding-bottom: 80px;
+        padding-top: 30px;
+        &-col{
+            img{
+                width: 65%;
+                margin-top: 5px;
+                margin-left: 50px;
+            }
+            &-cont{
+                color: #134e6f;
+                font-family: 'Roboto', sans-serif;
+                line-height: 1.9em;
+                letter-spacing: 0.5px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            &-head{
+                color: #134e6f;
+            }
+           
+        }
+        
+    }
+    // .service-section{
+    //     padding-bottom: 80px;
+    //     padding-top: 30px;
+    //     &-col{
+    //         img{
+    //             margin-top: 60px;
+    //             width:60%;
+    //         }
+    //         &-cont p{
+    //             color: #134e6f;
+    //             font-family: 'Roboto', sans-serif;
+    //             line-height: 1.9em;
+    //             padding-left: 20px;
+    //             padding-right: 20px;
+    //         }
+    //     }
+    // }
     .product-section{
-        background-image:url(Assets/sol.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-         padding-bottom: 104px;
+        background-color: #f9f9f9;
+        padding-bottom: 104px;
          .product-row{
             padding:5%;
         
@@ -254,11 +297,11 @@ $font-color:#134e6f;
                     font-weight: 300;
                 }
                 &-img{
-                    width: 35%;
-                    color: $font-color;
+                    width: 30%;
+                    color: #134e6f;
                     float: right;
-                    margin-top: -7%;
-                    margin-right: -7%;
+                    margin-top: -20px;
+                    margin-right: -20px;
                 }
                 &-subtitle{
                     color: $font-color;
@@ -267,12 +310,12 @@ $font-color:#134e6f;
                 }
                 &-para{
                     color: $font-color;
-                    width: 60%;
+                    width: 80%;
                     // font-family: 'HelveticaBold';
-                    font-size: 19px;
-                    line-height: 1.9em;
-                    padding-right: 21px;
-                    margin-left: -30px;
+                    // font-size: 19px;
+                    // line-height: 1.9em;
+                    // padding-right: 21px;
+                    // margin-left: -30px;
                 }
                 .button-group{
               
@@ -301,48 +344,48 @@ $font-color:#134e6f;
             }
         }   
     }
-    // .blog-section{
-    //     padding:5%;
-    //     .blog-cont{
-    //         float: right;
-    //         margin-left: 27%;
-    //         color: $font-color;
-    //         font-size: 15px;
-    //         font-weight: 600;
-    //     }
+    .blog-section{
+        padding:5%;
+        .blog-cont{
+            float: right;
+            margin-left: 27%;
+            color: $font-color;
+            font-size: 15px;
+            font-weight: 600;
+        }
 
-    //     .calendar{
-    //     position:absolute;
-    //     width:50px; 
-    //     height:80px;
-    //     box-shadow: 1px 2px 10px #a9a3a3;
-    //     }
+        .calendar{
+        position:absolute;
+        width:50px; 
+        height:80px;
+        box-shadow: 1px 2px 10px #a9a3a3;
+        }
 
-    //     .content{ 
-    //     position:absolute;
-    //     width: 100%; 
-    //     background-color:#f05855;
-    //     height:50%;
-    //     h5{
-    //     text-align:center; 
-    //     font-size: 20px;
-    //     line-height: 33px;
-    //         }
-    //     } 
-    //     .read-more{
-    //         color: $font-color;
-    //         font-size: 15px;
-    //         a:first-child{
-    //             float: right;
-    //             color: $font-color;
-    //             text-decoration: underline;
-    //         }
+        .content{ 
+        position:absolute;
+        width: 100%; 
+        background-color:#f05855;
+        height:50%;
+        h5{
+        text-align:center; 
+        font-size: 20px;
+        line-height: 33px;
+            }
+        } 
+        .read-more{
+            color: $font-color;
+            font-size: 15px;
+            a:first-child{
+                float: right;
+                color: $font-color;
+                text-decoration: underline;
+            }
             
-    //     }
+        }
         
-    // }
+    }
     .contact-section{
-        background-color: #ffffff;
+        background-color: #f9f9f9;
         
         .contact-row{
             padding-top: 5%;
@@ -352,7 +395,7 @@ $font-color:#134e6f;
                     display: block;
                     width: 100%;
                     padding: .375rem .75rem;
-                    
+                    outline: #134e6f;
                     background-color: #fff;
                     background-clip: padding-box;
                     border: 1px solid #ced4da;
@@ -391,7 +434,7 @@ $font-color:#134e6f;
                 padding-left: 60px;
                 .address-col{
                     color:$font-color;
-                    font-size: 19px;
+                    font-size: 16px;
                     h4{
                         font-size:18px;
                         color:#f16253;
@@ -486,6 +529,7 @@ $font-color:#134e6f;
     .solution-section{
         // padding-top: 90px;
         background-color: #f9f9f9;
+        height: 570px;
         &-col{
             &-cont{
                 // color: $font-color;
@@ -1393,11 +1437,7 @@ $font-color:#134e6f;
         .about-section{
             padding-left: 0 !important;
             padding-right: 0 !important;
-            .vision-mission-cont{
-                .about-section-col-cont{
-                    text-align: center;
-                }
-            }
+            
             &-col{
                 text-align: center;
                 &-cont{
